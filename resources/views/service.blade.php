@@ -1,58 +1,65 @@
 @extends("layouts/app")
 @section("konten")
-  <div class="hero hero-inner">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">Our Services</h1>
-            <p class="text-white">Nusantara Explore Tour menyediakan berbagai layanan wisata lengkap untuk memenuhi kebutuhan perjalanan Anda. Mulai dari paket tour domestik, pemesanan tiket transportasi, akomodasi hotel dan resort, hingga layanan pemandu wisata dan konsultasi perjalanan—semua dirancang untuk memberikan kenyamanan dan kepuasan selama liburan Anda.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="untree_co-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="service text-center">
-            <span class="icon-paper-plane"></span>
-            <h3>Keunggulan Dalam Perjalanan</h3>
-            <p>Nusantara Explore Tour menjamin pengalaman perjalanan yang aman, nyaman, dan menyenangkan. Dengan tim profesional, layanan responsif, dan destinasi terbaik, setiap liburan Anda akan menjadi momen yang tak terlupakan.</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="service text-center">
-            <span class="icon-tag"></span>
-			<h3>Menemukan Yang Terbaik</h3>
-            <p>Bersama Nusantara Explore Tour, Anda tidak hanya bepergian—Anda menemukan pengalaman terbaik di setiap destinasi. Kami hadir untuk memastikan setiap perjalanan sesuai dengan harapan, penuh kesan, dan layak dikenang.</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="service text-center">
-            <span class="icon-user"></span>
-            <h3>Saat-Saat Baru Dalam Hidup</h3>
-            <p>Perjalanan bukan sekadar berpindah tempat, tapi menciptakan momen baru yang penuh makna. Nusantara Explore Tour siap menemani Anda merasakan pengalaman baru, menjelajahi tempat indah, dan menciptakan kenangan tak terlupakan dalam setiap langkah.</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="service text-center">
-            <span class="icon-support"></span>
-            <h3>Kegembiraan Untuk Perjalanan Anda</h3>
-            <p>Kami percaya bahwa setiap perjalanan harus membawa kebahagiaan. Nusantara Explore Tour hadir untuk menghadirkan kegembiraan lewat layanan terbaik, destinasi menakjubkan, dan pengalaman yang membuat setiap momen liburan Anda lebih istimewa.</p>
-          </div>
+{{-- Hero Section --}}
+<div class="hero hero-inner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-2 fw-bold">Our Services</h1>
+          <p class="text-white fs-5">
+            Nusantara Explore Tour menghadirkan paket wisata lengkap — mulai dari tour domestik, tiket transportasi, 
+            akomodasi, hingga pemandu profesional. Semua dirancang untuk menghadirkan liburan yang nyaman, aman, 
+            dan penuh kenangan.
+          </p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+{{-- Keunggulan --}}
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service p-4 shadow-sm rounded h-100">
+          <span class="icon-paper-plane fs-1 text-primary mb-3 d-block"></span>
+          <h3 class="fw-bold">Perjalanan Terbaik</h3>
+          <p>Pengalaman aman, nyaman, dan menyenangkan dengan destinasi pilihan dan tim profesional.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service p-4 shadow-sm rounded h-100">
+          <span class="icon-tag fs-1 text-primary mb-3 d-block"></span>
+          <h3 class="fw-bold">Destinasi Pilihan</h3>
+          <p>Setiap perjalanan penuh kesan, dengan destinasi yang sesuai keinginan dan penuh cerita.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service p-4 shadow-sm rounded h-100">
+          <span class="icon-user fs-1 text-primary mb-3 d-block"></span>
+          <h3 class="fw-bold">Momen Tak Terlupakan</h3>
+          <p>Menciptakan momen berharga di setiap perjalanan yang akan selalu dikenang.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service p-4 shadow-sm rounded h-100">
+          <span class="icon-support fs-1 text-primary mb-3 d-block"></span>
+          <h3 class="fw-bold">Dukungan 24/7</h3>
+          <p>Siap membantu kapan saja, agar perjalanan Anda lancar tanpa hambatan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="untree_co-section">
 		<div class="container">
-			<div class="row  justify-content-center">
+			<div class="row mb-5 justify-content-center" >
 				<div class="col-lg-6 text-center">
-					<h2 class="section-title text-center mb-3">Layanan Kami</h2>
+					<h2 class="section-title text-center mb-3 ">Layanan Kami</h2>
 					<p>Menyediakan paket tour ke destinasi terkenal di Indonesia, mulai dari wisata alam, budaya, sejarah, petualangan, hingga edukasi. Jelajahi Indonesia bersama kami! 🌏✈️ </p>
 				</div>
 			</div>
@@ -104,16 +111,7 @@
 			</div>
 		</div>
 	</div>
-  
-	<div class="py-5 cta-section">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-12">
-					<h2 class="mb-2 text-white">Memungkinkan Anda Menjelajahi yang Terbaik. Hubungi Kami Sekarang</h2>
-					<p class="mb-4 lead text-white text-white-opacity">Ingin liburan seru dan tak terlupakan? Tim kami siap membantu Anda 24/7! Konsultasikan rencana perjalanan Anda, dapatkan penawaran terbaik, dan klaim diskon spesial hingga 20% hari ini juga. Jangan ragu—hubungi kami sekarang lewat WhatsApp, telepon, atau email untuk mulai merencanakan petualangan impian Anda bersama Nusantara Explore Tour!</p>
-					<p class="mb-0"><a href="booking.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+
+	<x-section></x-section>
+
 @endsection

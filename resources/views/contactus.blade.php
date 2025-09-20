@@ -1,72 +1,76 @@
 @extends("layouts/app")
 @section("konten")
+  <!-- Hero Section -->
   <div class="hero hero-inner">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
+        <div class="col-lg-6 mx-auto text-center text-white">
           <div class="intro-wrap">
-            <h1 class="mb-0">Contact Us</h1>
-            <p class="text-white">Punya pertanyaan atau ingin booking paket tour? Tim kami siap membantu! Silakan hubungi kami melalui WhatsApp, telepon, atau email untuk informasi lebih lanjut, konsultasi perjalanan, atau pemesanan. Kami tersedia setiap hari kerja dan siap melayani Anda dengan cepat dan ramah.</p>
+            <h1 class="mb-3">Contact Us</h1>
+            <p class="lead">
+              Punya pertanyaan, butuh informasi paket wisata, atau ingin konsultasi perjalanan?  
+              Tim <strong>Nusantara Explore</strong> siap membantu Anda dengan cepat dan ramah.  
+              Hubungi kami melalui formulir ini atau lewat WhatsApp, telepon, dan email yang tersedia.  
+              Kami selalu siap menjawab setiap pertanyaan Anda!
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  
-  
-  <div class="untree_co-section">
+  <!-- Booking Section -->
+  <div class="untree_co-section" style="background-color: #f9f9f9;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Deskripsi -->
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <h2 class="mb-4 text-primary">Get In Touch</h2>
+        <p class="mb-4">
+          Ada pertanyaan, butuh bantuan, atau ingin tahu lebih banyak tentang paket wisata kami?  
+          Tim <strong>Nusantara Explore Tour</strong> siap memberikan informasi yang Anda butuhkan  
+          dengan cepat dan ramah.
+        </p>
+        <p>
+          Isi formulir di samping untuk mengirimkan pertanyaan atau pesan Anda.  
+          Kami akan segera merespons dan membantu merencanakan perjalanan impian Anda.
+        </p>
+      </div>
+
+        <!-- Form Booking -->
+        <div class="col-lg-6" id="formBooking" data-aos="fade-left">
+          <form class="contact-form p-4 shadow bg-white rounded" method="POST" action="{{ route('contact.store') }}">
+            @csrf
             <div class="row">
               <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname">
+                <div class="form-group mb-3">
+                  <label class="text-black">Nama Depan</label>
+                  <input type="text" name="first_name" class="form-control" placeholder="Nama Depan" required>
                 </div>
               </div>
               <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname">
+                <div class="form-group mb-3">
+                  <label class="text-black">Nama Belakang</label>
+                  <input type="text" name="last_name" class="form-control" placeholder="Nama Belakang" required>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="text-black" for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
+
+            <div class="form-group mb-3">
+              <label class="text-black">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Alamat Email" required>
             </div>
 
-            <div class="form-group">
-              <label class="text-black" for="message">Message</label>
-              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            <div class="form-group mb-3">
+              <label class="text-black">Pesan / Permintaan Khusus</label>
+              <textarea name="message" class="form-control" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary w-100">Kirim</button>
           </form>
         </div>
-        <div class="col-lg-5 ml-auto">
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-house"></span>
-            <address class="text">
-              Jl. Soekarno Hatta No.123, Bandar Lampung, Lampung
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-phone-call"></span>
-            <address class="text">
-              +62-812-3456-7890
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-mail"></span>
-            <address class="text">
-              nusantaraexplore@gmail.com
-            </address>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
